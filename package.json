@@ -6,6 +6,15 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "Kelvin Kamani",
-  "license": "ISC"
+  "author": "",
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Kelvinoo7/startup-react-boilerplate.git"
+  },
+  "bugs": {
+    "url": "https://github.com/Kelvinoo7/startup-react-boilerplate/issues"
+  },
+  "homepage": "https://github.com/Kelvinoo7/startup-react-boilerplate#readme",
+  "keywords": []
 }
