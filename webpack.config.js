@@ -1,4 +1,5 @@
 var path = require("path");
+var HtmlWebpackPlugin = require("html-webpack-plugin");
 
 var mainConfig = {
     entry: "./src/index.js",
@@ -21,7 +22,12 @@ var commonConfig = {
                 }
             }
         ]
-    }
+    },
+    plugins: [
+        new HtmlWebpackPlugin({
+            template: "./src/index.html"
+        })
+    ]
 }
 
 module.exports = Object.assign({}, mainConfig, commonConfig);
