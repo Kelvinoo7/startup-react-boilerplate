@@ -7,6 +7,9 @@ module.exports = {
         filename: "app.bundle.js",
         path: path.resolve(__dirname, "dist")
     },
+    resolve: {
+        extensions: [ ".js", ".css" ]
+    },
     module: {
         rules: [
             {
@@ -17,6 +20,11 @@ module.exports = {
                     presets: [ "@babel/preset-env", "@babel/preset-react" ],
                     plugins: [ "@babel/plugin-proposal-class-properties" ]
                 }
+            },
+            {
+                test: /\.css$/,
+                use: [ "style-loader", "css-loader" ],
+                exclude: /node_modules/
             }
         ]
     },
