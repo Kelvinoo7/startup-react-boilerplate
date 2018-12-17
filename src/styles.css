@@ -9,3 +9,7 @@ html {
 *:after {
     box-sizing: inherit;
 }
+
+.warning {
+    color: tomato;
+}
