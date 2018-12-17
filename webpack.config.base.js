@@ -1,16 +1,12 @@
 var path = require("path");
 var HtmlWebpackPlugin = require("html-webpack-plugin");
 
-var mainConfig = {
+module.exports = {
     entry: "./src/index.js",
     output: {
         filename: "app.bundle.js",
         path: path.resolve(__dirname, "dist")
-    }
-}
-
-var commonConfig = {
-    mode: "production",
+    },
     module: {
         rules: [
             {
@@ -29,5 +25,3 @@ var commonConfig = {
         })
     ]
 }
-
-module.exports = Object.assign({}, mainConfig, commonConfig);
