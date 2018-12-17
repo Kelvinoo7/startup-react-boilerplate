@@ -4,6 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
+    "build": "webpack",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
@@ -16,5 +17,9 @@
     "url": "https://github.com/Kelvinoo7/startup-react-boilerplate/issues"
   },
   "homepage": "https://github.com/Kelvinoo7/startup-react-boilerplate#readme",
-  "keywords": []
+  "keywords": [],
+  "devDependencies": {
+    "webpack": "^4.27.1",
+    "webpack-cli": "^3.1.2"
+  }
 }
