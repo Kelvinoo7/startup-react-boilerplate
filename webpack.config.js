@@ -9,7 +9,19 @@ var mainConfig = {
 }
 
 var commonConfig = {
-    mode: "production"
+    mode: "production",
+    module: {
+        rules: [
+            {
+                test: /\.js$/,
+                loader: "babel-loader",
+                exclude: /node_modules/,
+                options: {
+                    presets: [ "@babel/preset-env" ]
+                }
+            }
+        ]
+    }
 }
 
 module.exports = Object.assign({}, mainConfig, commonConfig);
